@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+html,
+body{
+    font-family: Raleway;
+    scroll-behavior: smooth;
+}
+
+/* Classes Générales */
+
+.borderno{
+    border: none;
+}
+
+.centerflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aroundflex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.betweenflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columncenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.columnaround{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.columnbetween{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Taille des liens */
+
+.sizeliens{
+    width: 100%;
+}
+
+.sizelien{
+    width: 140px;
+    height: 100px;
+    margin-top: -0.5rem;
+}
+
+.sizelien12{
+    margin-left: 60%;
+}
+
+/* Décoration du texte */
+
+.textdeco{
+    text-decoration: none;
+}
+
+.textgras{
+    font-weight: bold;
+}
+
+/* Couleurs de base  */
+
+.colorlink12{
+    color: black;
+}
+
+.colorlink12:hover{
+    color: #0065fc;
+}
+
+.colorblue{
+    color: #0065fc;
+}
+
+.colorlightblue{
+    color: #deebff;
+}
+
+.colorgrey{
+    color: #f2f2f2;
+}
+
+.bgblue{
+    background-color: #0065fc;
+}
+
+.bglightblue{
+    background-color: #deebff;
+}
+
+.bggrey{
+    background-color: #f2f2f2;
+}
+
+/* Navigation */
+
+.navborder{
+    border-top: 3px solid transparent;
+}
+
+.navborder:hover{
+    cursor: pointer;
+    border-top: 3px solid #0065fc;
+}
+
+.logomarg{
+    margin-bottom: 10px;
+}
+
+.navsize{
+    height: auto;
+}
+
+/* Header */
+
+.pasdaffichage{
+    display: none;
+}
+
+.p-search{
+    padding-left: 20px;
+}
+
+.recherche{
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    width: 230px;
+    height: 50px;
+}
+
+.sizeicon{
+    border-radius: 10px 0 0 10px;
+    width: 10%;
+    height: 50px;
+}
+
+.bordersearch{
+    border: 0.5px solid #f2f2f2;
+    width: 389px;
+    border-radius: 10px;
+}
+
+.searchbutton{
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    color: white;
+    width: 120px;
+    height: 50px;
+}
+
+.searchbutton:hover{
+    background-color: #deebff;
+    color: #0065fc;
+
+}
+
+/* Filtres */
+
+.texticonfiltre{
+    margin-right: 20px;
+    border-radius: 30px;
+    height: 50px;
+    border: 2px solid #f2f2f2;
+}
+
+.texticonfiltre:hover{
+    cursor: pointer;
+    background-color: #deebff;
+}
+
+.textfiltre{
+    padding-right: 20px;
+    height: 50px;
+}
+
+.m-filtre-titre{
+    margin-right: 20px;
+}
+
+.m-filtre{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.filtre{
+    align-items: center;
+    display: flex;
+}
+
+.iconfiltre{
+    padding: 10px;
+    color: #0065fc;
+}
+
+/* Inforamtion */
+
+.information{
+    align-items: center;
+    display: flex;
+}
+
+.icon{
+    margin-right: 5px;
+    border-radius: 25px;
+    border: 2px solid #f2f2f2;
+    height: 20px;
+    width: 20px;
+}
+
+/* Hébergements à Marseille */
+
+.hebergementsize{
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 650px;
+    flex: 2;
+}
+
+.popularsize{
+    border-radius: 10px;
+    margin-left: 20px;
+    height: 650px;
+    flex: 1;
+}
+
+.contheber{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.carteheber{
+    border-radius: 20px;
+    padding: 1%;
+    background-color: white;
+    height: auto;
+    width: 30%;
+    /* J'ai mis en plus une box shadow pour voir avec le fond en blanc */
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.carteheber:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cont1{
+    margin-bottom: 10px;
+}
+
+.cont2{
+    margin-top: 10px;
+}
+
+.insideheber{
+    width: 90%;
+}
+
+.imgheber1{
+    background-image: url("Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgheber2{
+    background-image: url("Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgheber3{
+    background-image: url("Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgheber4{
+    background-image: url("Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgheber5{
+    background-image: url("Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgheber6{
+    background-image: url("Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Les plus populaires */
+
+.titrelogopop{
+    margin-top: 2px;
+}
+
+.contpop{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.partpop12{
+    margin-bottom: 22px;
+}
+
+.insidepop{
+    padding-left: 5%;
+    width: 60%;
+}
+
+.insidepop h3{
+    margin-bottom: 50px;
+}
+
+.cartepop{
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 1% 0 1% 1% ;
+    height: auto;
+    background-color: white;
+}
+
+.cartepop:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.imgpop1{
+    background-image: url("Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgpop2{
+    background-image: url("Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgpop3{
+    background-image: url("Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Activités à Marseille */
+
+
+.activites{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.carteact{
+    height: 600px;
+    width: 100%;
+}
+
+.carteact:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.titreact{
+    width: 95%;
+    padding-left: 5%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.partact{
+    border-radius: 0 0 15px 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    border: 15px;
+    width: 90%;
+}
+
+.imgact1{
+    background-image: url("Images Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgact2{
+    background-image: url("Images Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgact3{
+    background-image: url("Images Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgact4{
+    background-image: url("Images Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    width: 100%;
+    height: 530px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 100px;
+    height: 250px;
+}
+
+.partfooter{
+    height: 150px;
+}
+
+.m-footer1{
+    margin-left: 5%;
+}
+
+.m-footer3{
+    margin-right: 15%;
+}
+
+.lienfooter{
+    color: black;
+}
+
+.divlienfooter{
+    height: 30px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1050px) {
+
+    .sizelien12{
+        margin-left: 35%;
+    }
+
+    .insideheber{
+        min-height: 150px;
+    }
+
+    .hebergementsize{
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .popularsize{
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .sizetablettepop{
+        margin-top: 0;
+    }
+
+    .fa-chart-line{
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .fa-chart-line{
+        margin-bottom: 18px;
+    }
+
+    
+
+    .texticonfiltre{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .fa-chart-line{
+        margin-bottom: 18px;
+    }
+    
+    #Hébergements{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .popularsize{
+        padding: 5%;
+        flex: none;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .insidepop{
+        height: 100%;
+        width: 100%;
+    }
+
+    .insidepop h3{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .insidepop p{
+        margin-bottom: 15%;
+    }
+
+    .insidepop div{
+        margin-top: 30%;
+    }
+
+    .imgpop1,
+    .imgpop2,
+    .imgpop3{
+        width: 35%;
+    }
+
+    .cartepop{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .contpop{
+        min-height: auto;
+        height: auto;
+    }
+    
+    .partipopu{
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .hebergementsize{
+        padding: 5%;
+        margin-top: 20px;
+        margin-right: 0;
+        width: 90%;
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .blocact{
+        margin-right: auto;
+        height: auto;
+    }
+
+    .carteact{
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    .partact{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .imgact1,
+    .imgact2,
+    .imgact3,
+    .imgact4{
+        height: 200px;
+    }
+
+    .footer{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    
+    .fa-chart-line{
+        margin-bottom: 18px;
+    }
+
+    .insidepop{
+        height: 100%;
+        width: 100%;
+    }
+
+    .cartepop{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .contpop{
+        min-height: auto;
+        height: auto;
+    }
+    
+    .partipopu{
+        gap: 1rem;
+    }
+
+    .sizelien{
+        width: 100%;
+        column-gap: 1rem;
+    }
+
+    .sizelien12{
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .hebergementsize{
+        height: auto;
+    }
+
+    .cont1{
+        margin-bottom: 0;
+        gap: 1%;
+    }
+
+    .cont2{
+        margin-top: 0;
+        gap: 1%;
+    }
+
+    .carteheber{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .insideheber{
+        min-height: auto;
+    }
+
+    .blocact{
+        margin-right: auto;
+        height: auto;
+    }
+
+    .carteact{
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    .partact{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .imgact1,
+    .imgact2,
+    .imgact3,
+    .imgact4{
+        height: 200px;
+    }
+
+    .footer{
+        padding: 20px;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .m-footer1{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    header h1{
+        margin-left: 5%;
+    }
+
+    header p{
+        margin-left: 5%;
+    }
+
+    .logo-booki{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .textfiltre{
+        height: 50px;
+        width: 100%;
+        padding-right: 70%;
+    }
+
+    .filtremobile{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .texticonfiltre{
+        width: 100%;
+    }
+
+    .filtre1{
+        width: 100%;
+    }
+
+    .filtre2{
+        width: 100%;
+    }
+
+    .filtre4{
+        padding-right: 49%;
+    }
+    
+    .sizelien12{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .mobilesizelien{
+        border-bottom: 5px solid #f2f2f2;
+        border-top: 0;
+        width: 100%;
+    }
+
+    .mobilesizelien:hover{
+        color: black;
+        border-top: 0;
+        border-bottom: 5px solid #0065fc;
+    }
+
+    .sizeliens{
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .mobiletitreh1{
+        font-size: x-large;
+    }
+
+    .recherche{
+        border: 1px solid #f2f2f2;
+        width: 100%;
+    }
+
+    .bordersearch{
+        border: none;
+        width: auto;
+    }
+
+    .input_search{
+        width: 70%;
+    }
+
+    .searchbutton{
+        width: 10%;
+    }
+
+    .pasdaffichage{
+        display: block;
+    }
+
+    .nonemobile{
+        display: none;
+    }
+
+    .m-filtre{
+        padding-left: 5%;
+    }
+
+    .information{
+        width: 80%;
+        margin-left: 23px;
+    }
+
+
+    .popularsize{
+        border-radius: 0;
+    }
+
+    .partipopu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .insidepop{
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    .imgpop1,
+    .imgpop2,
+    .imgpop3{
+        height: 180px;
+        margin-left: -6%;
+    }
+
+    #Hébergements{
+        flex-direction: column-reverse;
+    }
+
+    .cont1,
+    .cont2{
+        flex-direction: column;
+    }
+
+
+    .hebergementsize{
+        background-color: white;
+    }
+
+    .hebergementsize h2{
+        padding-left: 0;
+    }
+
+    .hebergementsize span{
+        display: none;
+    }
+
+    .insideheber{
+        margin-left: 16px;
+    }
+
+    #Activités h2{
+        width: 29%;
+        margin-left: 5%;
+    }
+
+    #Activités{
+        margin-top: -5rem;
+    }
+
+    .blocact{
+        flex-direction: column;
+    }
+
+    .partfooter{
+        margin-left: 15px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    
+    html,
+    body{
+        margin: 0;
+        padding: 0;
+    }
+}

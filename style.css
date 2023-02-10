@@ -4,6 +4,8 @@ html,
 body{
     font-family: Raleway;
     scroll-behavior: smooth;
+    max-width: 1400px;
+    margin: auto;
 }
 
 /* Classes Générales */
@@ -58,7 +60,6 @@ body{
 .sizelien{
     width: 140px;
     height: 100px;
-    margin-top: -0.5rem;
 }
 
 .sizelien12{
@@ -120,8 +121,9 @@ body{
     border-top: 3px solid #0065fc;
 }
 
-.logomarg{
-    margin-bottom: 10px;
+.logo-booki{
+    height: 19px;
+    width: 61.09px;
 }
 
 .navsize{
@@ -210,7 +212,7 @@ body{
     color: #0065fc;
 }
 
-/* Inforamtion */
+/* Information */
 
 .information{
     align-items: center;
@@ -252,7 +254,6 @@ body{
     background-color: white;
     height: auto;
     width: 30%;
-    /* J'ai mis en plus une box shadow pour voir avec le fond en blanc */
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
@@ -273,61 +274,23 @@ body{
     width: 90%;
 }
 
-.imgheber1{
-    background-image: url("Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
+article figure{
+    margin: 0;
 }
 
-.imgheber2{
-    background-image: url("Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+.imgheber{
     width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgheber3{
-    background-image: url("Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgheber4{
-    background-image: url("Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgheber5{
-    background-image: url("Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgheber6{
-    background-image: url("Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    width: 100%;
-    height: 120px;
+    height: 124px;
     border-radius: 15px 15px 0 0;
     background-size: cover;
     background-position: center;
 }
 
 /* Les plus populaires */
+
+aside figure{
+    margin: 0;
+}
 
 .titrelogopop{
     margin-top: 2px;
@@ -344,11 +307,8 @@ body{
 
 .insidepop{
     padding-left: 5%;
-    width: 60%;
-}
-
-.insidepop h3{
-    margin-bottom: 50px;
+    width: 62%;
+    height: 10rem;
 }
 
 .cartepop{
@@ -364,27 +324,8 @@ body{
     cursor: pointer;
 }
 
-.imgpop1{
-    background-image: url("Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    width: 35%;
-    height: 160px;
-    border-radius: 15px 0 0 15px;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgpop2{
-    background-image: url("Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    width: 35%;
-    height: 160px;
-    border-radius: 15px 0 0 15px;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgpop3{
-    background-image: url("Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    width: 35%;
+.imgpop{
+    width: 137px;
     height: 160px;
     border-radius: 15px 0 0 15px;
     background-size: cover;
@@ -393,10 +334,13 @@ body{
 
 /* Activités à Marseille */
 
-
 .activites{
     margin-bottom: 50px;
     margin-top: 50px;
+}
+
+#Activites figure{
+    margin: 0;
 }
 
 .carteact{
@@ -409,6 +353,10 @@ body{
     cursor: pointer;
 }
 
+.blocact{
+    gap: 1.5rem;
+}
+
 .titreact{
     width: 95%;
     padding-left: 5%;
@@ -418,41 +366,13 @@ body{
 }
 
 .partact{
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
     border: 15px;
-    width: 90%;
-}
-
-.imgact1{
-    background-image: url("Images Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     width: 100%;
-    height: 530px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
 }
 
-.imgact2{
-    background-image: url("Images Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    width: 100%;
-    height: 530px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgact3{
-    background-image: url("Images Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    width: 100%;
-    height: 530px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.imgact4{
-    background-image: url("Images Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+.imgact{
     width: 100%;
     height: 530px;
     border-radius: 15px 15px 0 0;
@@ -521,24 +441,15 @@ body{
 
 @media screen and (max-width: 992px){
 
-    .fa-chart-line{
-        margin-bottom: 18px;
-    }
-
-    
-
     .texticonfiltre{
         margin-bottom: 20px;
     }
-}
-
-@media screen and (max-width: 992px){
 
     .fa-chart-line{
         margin-bottom: 18px;
     }
     
-    #Hébergements{
+    #Hebergements{
         flex-direction: column;
         width: 100%;
     }
@@ -551,8 +462,8 @@ body{
     }
 
     .insidepop{
-        height: 100%;
-        width: 100%;
+        height: 9.5rem;
+        width: 8rem;
     }
 
     .insidepop h3{
@@ -564,14 +475,8 @@ body{
         margin-bottom: 15%;
     }
 
-    .insidepop div{
-        margin-top: 30%;
-    }
-
-    .imgpop1,
-    .imgpop2,
-    .imgpop3{
-        width: 35%;
+    .imgpop{
+        height: 140px;
     }
 
     .cartepop{
@@ -583,10 +488,12 @@ body{
     .contpop{
         min-height: auto;
         height: auto;
+        width: 90%;
     }
     
     .partipopu{
         gap: 1rem;
+        display: flex;
         flex-direction: row;
     }
 
@@ -597,11 +504,13 @@ body{
         width: 90%;
         flex: none;
         margin-bottom: 20px;
+        height: auto;
     }
 
     .blocact{
         margin-right: auto;
         height: auto;
+        gap: 0rem;
     }
 
     .carteact{
@@ -610,47 +519,16 @@ body{
         height: auto;
     }
 
-    .partact{
-        margin-left: 5%;
-        margin-right: 5%;
+    .imgact{
+        height: 200px;
     }
 
-    .imgact1,
-    .imgact2,
-    .imgact3,
-    .imgact4{
-        height: 200px;
+    #Activites figure{
+        width: 100%;
     }
 
     .footer{
         margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 992px){
-    
-    .fa-chart-line{
-        margin-bottom: 18px;
-    }
-
-    .insidepop{
-        height: 100%;
-        width: 100%;
-    }
-
-    .cartepop{
-        margin: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    .contpop{
-        min-height: auto;
-        height: auto;
-    }
-    
-    .partipopu{
-        gap: 1rem;
     }
 
     .sizelien{
@@ -661,10 +539,6 @@ body{
     .sizelien12{
         width: 100%;
         margin-left: 20%;
-    }
-
-    .hebergementsize{
-        height: auto;
     }
 
     .cont1{
@@ -686,27 +560,8 @@ body{
         min-height: auto;
     }
 
-    .blocact{
-        margin-right: auto;
-        height: auto;
-    }
-
-    .carteact{
-        margin-bottom: 50px;
-        width: 100%;
-        height: auto;
-    }
-
     .partact{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .imgact1,
-    .imgact2,
-    .imgact3,
-    .imgact4{
-        height: 200px;
+        margin: 5%;
     }
 
     .footer{
@@ -731,8 +586,7 @@ body{
     }
 
     .logo-booki{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 22rem;
     }
 
     .textfiltre{
@@ -824,7 +678,6 @@ body{
         margin-left: 23px;
     }
 
-
     .popularsize{
         border-radius: 0;
     }
@@ -839,14 +692,12 @@ body{
         width: 50%;
     }
 
-    .imgpop1,
-    .imgpop2,
-    .imgpop3{
+    .imgpop{
         height: 180px;
-        margin-left: -6%;
+        width: 17rem;
     }
 
-    #Hébergements{
+    #Hebergements{
         flex-direction: column-reverse;
     }
 
@@ -868,17 +719,21 @@ body{
         display: none;
     }
 
+    .imgheber{
+        height: 15rem;
+    }
+
     .insideheber{
         margin-left: 16px;
     }
 
-    #Activités h2{
+    #Activites h2{
         width: 29%;
         margin-left: 5%;
     }
 
-    #Activités{
-        margin-top: -5rem;
+    .imgact{
+        height: 20rem;
     }
 
     .blocact{
@@ -899,3 +754,6 @@ body{
         padding: 0;
     }
 }
+
+
+

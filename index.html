@@ -16,16 +16,17 @@
         <!-- Navigation -->
         <nav class="navsize">
             <div class="betweenflex sizeliens">
-                <div class="logo-booki">
-                    <img class="logomarg" src="Booki@3x.png" alt="logo-booki" width="180" height="60">
+                <!-- CSS en moins qui était dans le HTML-->
+                <div>
+                    <img class="logo-booki" src="Images/logo/Booki@3x.png" alt="logo-booki">
                 </div>
-                <!-- J'ai rajouté une div qui englobe les deux liens -->
-                <div class="centerflex sizelien12">
+                <!-- J'ai rajouté une div qui englobe les deux liens pour le responsive -->
+                <div class="centerflex sizelien12">π
                     <div class="sizelien centerflex navborder mobilesizelien ">
-                        <a href="#Hébergements" class="textdeco colorlink12">Hébergements</a>
+                        <a href="#Hebergements" class="textdeco colorlink12">Hébergements</a>
                     </div>
                     <div class="sizelien centerflex navborder mobilesizelien">
-                        <a href="#Activités" class="textdeco colorlink12">Activités</a>
+                        <a href="#Activites" class="textdeco colorlink12">Activités</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +35,7 @@
             <section>
                 <div>
                     <!-- Texte d'introduction -->
-                    <h1 class="textgras ">Trouver votre hébergement pour des vacances de rêve</h1>
+                    <h1 class="textgras">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <!-- Barre de recherche -->
@@ -53,9 +54,9 @@
                 <!-- Filtres -->
                 <div class="filtre m-filtre filtremobile ">
                     <div class="m-filtre-titre">
-                        <h3>Filtres</h3>
+                        <h2>Filtres</h2>
                     </div>
-                    <!-- J'ai mis deux div avec la class aroundflex pour séparer en mobile -->
+                    <!-- J'ai mis deux div avec la class aroundflex pour séparer pour la version mobile -->
                     <!-- Première div -->
                     <div class="aroundflex filtre1">
                         <div class="texticonfiltre betweenflex ">
@@ -87,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Information -->
+                <!-- Texte d'information -->
                 <div class="information">
                     <div class="icon centerflex">
                         <i class="fa-solid fa-info colorblue"></i>
@@ -97,92 +98,108 @@
             </section>
         </header>
         <!-- Hébergements à Marseille -->
-        <section id="Hébergements" class="aroundflex" >
-            <div class="hebergementsize bggrey contheber columnaround">
+        <div class="aroundflex" id="Hebergements">
+            <article class="hebergementsize bggrey contheber columnaround">
                 <h2>Hébergements à Marseille</h2>
+                <!-- Les 3 premières cartes des hébergements -->
+                <!-- Ajustement des images qui étaient dans le CSS que j'ai déplacé dans l'HTML afin d'améliorer l'accessiblité -->
                 <div class="cont1 betweenflex">
                     <div class="carteheber column columnaround">
-                        <div class="imgheber1"></div>
+                        <figure>
+                            <img class="imgheber" src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                        </figure>
                         <div class="insideheber">
                             <h3>Auberge La Canebière</h3>
                             <p>Nuit à partir de 25€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <!-- Réglages des classes CSS pour éviter les répétitions (DRY) -->
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                     <div class="carteheber columnaround">
-                        <div class="imgheber2"></div>
+                        <figure>
+                            <img class="imgheber" src="Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        </figure>
                         <div class="insideheber">
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 52€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                     <div class="carteheber columnaround">
-                        <div class="imgheber3"></div>
+                        <figure>
+                            <img class="imgheber" src="Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                        </figure>
                         <div class="insideheber">
                             <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de 76€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Les 3 dernières cartes des hébergements -->
                 <div class="cont2 betweenflex">
                     <div class="carteheber columnaround">
-                        <div class="imgheber4"></div>
+                        <figure>
+                            <img class="imgheber" src="Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge de la mer">
+                        </figure>
                         <div class="insideheber">
                             <h3>Auberge de la mer</h3>
                             <p>Nuit à partir de 46€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                     <div class="carteheber columnaround">
-                        <div class="imgheber5"></div>
+                        <figure>
+                            <img class="imgheber" src="Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le panier">
+                        </figure>
                         <div class="insideheber">
                             <h3>Auberge Le panier</h3>
                             <p>Nuit à partir de 23€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                     <div class="carteheber columnaround">
-                        <div class="imgheber6"></div>
+                        <figure>
+                            <img class="imgheber" src="Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                        </figure>
                         <div class="insideheber">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
@@ -190,87 +207,101 @@
                 </div>
                 <div></div>
                 <p class="textgras"><span>Afficher Plus</span></p>
-            </div>
+            </article>
             <!-- Les plus populaires -->
-            <div class="popularsize bggrey contpop">
+            <aside class="popularsize bggrey contpop">
                 <div class="betweenflex">
                     <h2 class="textgras sizetablettepop">Les plus populaires</h2>
                     <div>
                         <i class="fa-solid fa-chart-line sizetablettepop colorblue"></i>
                     </div>
                 </div>
-                <div class="columnaround partipopu">
+                <div class="partipopu">
                     <div class="centerflex cartepop partpop12">
-                        <div class="imgpop1"></div>
+                        <figure>
+                            <img class="imgpop" src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le Soleil du matin">
+                        </figure>
                         <div class="insidepop">
                             <h3>Hôtel Le Soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                     <div class="centerflex cartepop partpop12">
-                        <div class="imgpop2"></div>
+                        <figure>
+                            <img class="imgpop" src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes au coeur de l'eau">
+                        </figure>
                         <div class="insidepop">
                             <h3>Chambres d'hôtes au coeur de l'eau</h3>
                             <p>Nuit à partir de 71€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                                <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                     <div class="centerflex cartepop partpop12">
-                        <div class="imgpop3"></div>
+                        <figure>
+                            <img class="imgpop" src="Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
+                        </figure>
                         <div class="insidepop">
                             <h3>Hôtel Bleu et Blanc</h3>
                             <p>Nuit à partir de 68€</p>
-                            <div>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
-                                <i class="fa-solid fa-star colorblue"></i>
+                            <div class="colorblue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star colorgrey"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </aside>
+        </div>
         <!-- Activités à Marseille -->
-        <section  class="activites" id="Activités">
+        <section  class="activites" id="Activites">
             <h2>Activités à Marseille</h2>
-            <div class="blocact betweenflex">
+            <div class="blocact centerflex">
                 <div class="carteact betweenflex">
                     <div class="partact columncenter">
-                        <div class="imgact1"></div>
+                        <figure>
+                            <img class="imgact" src="Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                        </figure>
                         <div class="titreact"><h3 >Vieux Port</h3></div>
                     </div>
                 </div>
                 <div class="carteact betweenflex">
                     <div class="partact columncenter">
-                        <div class="imgact2"></div>
-                        <div class="titreact"><h3 >Fort de Pomègues</h3></div>
+                        <figure>
+                            <img class="imgact" src="Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                        </figure>
+                        <div class="titreact"><h3>Fort de Pomègues</h3></div>
                     </div>
                 </div>
                 <div class="carteact betweenflex">
                     <div class="partact columncenter">
-                        <div class="imgact3"></div>
-                        <div class="titreact"><h3 >Parc national des Calanques</h3></div>
+                        <figure>
+                            <img class="imgact" src="Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
+                        </figure>
+                        <div class="titreact"><h3>Parc national des Calanques</h3></div>
                     </div>
                 </div>
                 <div class="carteact betweenflex">
                     <div class="partact columncenter">
-                        <div class="imgact4"></div>
-                        <div class="titreact"><h3 >Notre-Dame-de-la-Garde</h3></div>
+                        <figure>
+                            <img class="imgact" src="Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                        </figure>
+                        <div class="titreact"><h3>Notre-Dame-de-la-Garde</h3></div>
                     </div>
                 </div>
             </div>
